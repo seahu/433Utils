@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
      // This pin is not the first pin on the RPi GPIO header!
      // Consult https://projects.drogon.net/raspberry-pi/wiringpi/pins/
      // for more information.
-     int PIN = 2;
+     int PIN = 29;
      
      if(wiringPiSetup() == -1) {
        printf("wiringPiSetup failed, exiting...");
@@ -49,6 +49,7 @@ int main(int argc, char *argv[]) {
    
           printf("Received %i\n", mySwitch.getReceivedValue() );
         }
+	fflush(stdout); //need for futer process result in pipe
     
         mySwitch.resetAvailable();
     
