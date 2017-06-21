@@ -36,7 +36,7 @@ Received 0110011010101001101010010101010101011001010101101001011001010101 7
 **means of output:**
 frist is number binary code and secound is protocol number
 
-###for send:
+### for send:
 ```
 ./codesend binarycode [protocol] [PIN] [pulselength]
 	binarycode	-	As decoded by RFSniffer\n");
